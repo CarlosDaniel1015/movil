@@ -1,3 +1,4 @@
+import 'package:counter_app/home_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,15 +9,23 @@ class MyApp extends StatefulWidget {
   const new({super.key});
 
   @override
+<<<<<<< HEAD
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
+=======
+  State createState() => _MyAppState();
+}
+
+class _MyAppState extends State {
+>>>>>>> optimizacion
   int counter = 0;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.blue),
       home: Scaffold(
         appBar: AppBar(title: const Text('Unitecnar App')),
@@ -68,6 +77,11 @@ class _MyAppState extends State<MyApp> {
           ],
         ),
       ),
+=======
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.blue),
+      home: HomeScreen(),
+>>>>>>> optimizacion
     );
   }
 }
